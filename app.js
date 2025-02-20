@@ -1,21 +1,22 @@
-const hamburger = document.querySelector("#hamburger")
-const menu = document.querySelector("#menu")
-const moon = document.querySelector('#moon')
-const body = document.querySelector('body')
-const hLinks = document.querySelectorAll("#hLink")
+const moon = document.querySelector("#moon");
+const body = document.querySelector("body");
 
-hamburger.addEventListener("click", ()=>{
-  menu.classList.toggle("hidden")
-  hamburger.classList.toggle("bg-white")
-})
-
-hLinks.forEach(link => {
-  link.addEventListener('click', () => {
-  menu.classList.toggle("hidden")
-  hamburger.classList.toggle("bg-white")
-  })
-})
-
-moon.addEventListener("click", ()=>{
-  body.classList.toggle("dark")
-})
+// Ensure the dark mode toggle works
+moon.addEventListener("click", () => {
+  body.classList.toggle("dark");
+});
+document.addEventListener("DOMContentLoaded", function () {
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+  });
+});

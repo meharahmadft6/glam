@@ -3,15 +3,20 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="./img/assistance.png" type="image/x-icon" />
-    <link rel="icon" href="./img/favicon.svg" type="image/svg+xml" />
+    <link
+      rel="shortcut icon"
+      href="./img/darklogo-re.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
-
-<!--     <script src="https://unpkg.com/@tailwindcss/browser@4"></script> -->
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
 
     <title>Glam By HA</title>
   </head>
@@ -24,63 +29,53 @@
       <nav class="w-full fixed top-0 bg-white z-10 dark:bg-slate-900">
         <div class="container mx-auto p-5 flex items-center justify-between">
           <div class="flex items-center gap-2">
-            <img class="img-logo" src="./img/logo.png" alt="" />
-            <span class="text-2xl font-bold text-indigo-900 dark:text-white"
-              >GlamByHA</span
+            <img class="img-logo" src="./img/darklogo-re.png" alt="Logo Dark" />
+            <span class="text-2xl font-bold text-indigo-900 dark:text-white">
+              <a href="index.html"> GlamByHA </a>
+   
+            </span>
+          </div>
+          <ul
+            class="sm:hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
+          >
+            <li class="hover:text-gray-500">
+              <a href="#">Home</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#about">About me</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#services">Services</a>
+            </li>
+            <li class="hover:text-gray-500">
+              <a href="#works">Works</a>
+            </li>
+   <li class="hover:text-gray-500">
+              <a
+                href="https://api.whatsapp.com/send?phone=19295950931&text=Hi!%20I%20want%20to%20book%20an%20appointment"
+                >Contact</a
+              >
+          </ul>
+
+          <div class="flex items-center gap-4">
+            <!-- Dark Mode Toggle -->
+            <img
+              id="moon"
+              src="./img/moon.png"
+              class="w-8 cursor-pointer"
+              alt="Dark Mode Toggle"
+            />
+
+            <a
+              href="https://api.whatsapp.com/send?phone=19295950931"
+              class="floating-whatsapp"
             >
+              <img src="./img/whatsapp.png" alt="WhatsApp" />
+            </a>
           </div>
-          <ul
-            class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 font-bold text-sm uppercase"
-          >
-            <li class="hover:text-gray-500">
-              <a href="#">homepage</a>
-            </li>
-            <li class="hover:text-gray-500">
-              <a href="#about">about me</a>
-            </li>
-            <li class="hover:text-gray-500">
-              <a href="#services">services</a>
-            </li>
-            <li class="hover:text-gray-500">
-              <a href="#works">works</a>
-            </li>
-            <li class="hover:text-gray-500">
-              <a href="#contact">contact</a>
-            </li>
-          </ul>
-          <img
-            id="moon"
-            src="./img/moon.png"
-            class="hidden md:block w-5 cursor-pointer"
-            alt=""
-          />
-          <div id="hamburger" class="space-y-1 md:hidden cursor-pointer z-20">
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-            <div class="w-6 h-0.5 bg-black"></div>
-          </div>
-          <ul
-            id="menu"
-            class="hidden bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center"
-          >
-            <li>
-              <a id="hLink" href="#">homepage</a>
-            </li>
-            <li>
-              <a id="hLink" href="#about">about me</a>
-            </li>
-            <li>
-              <a id="hLink" href="#services">services</a>
-            </li>
-            <li>
-              <a id="hLink" href="#works">works</a>
-            </li>
-            <li>
-              <a id="hLink" href="#contact">contact</a>
-            </li>
-          </ul>
         </div>
       </nav>
+
       <img
         class="absolute bottom-0 right-0 lg:left-0 mx-auto h-5/6 object-cover"
         src="./img/man.png"
@@ -92,7 +87,9 @@
       <div
         class="absolute top-1/3 left-5 text-xl sm:left-10 sm:text-4xl md:left-2/4 md:text-6xl font-bold"
       >
-        <span class="text-indigo-900">Hi, I'm Nazia Parveen</span>
+        <span class="text-indigo-900 dark:text-white"
+          >Hi, I'm Nazia Parveen</span
+        >
         <p id="text" class="text-red-500"></p>
       </div>
 
@@ -107,7 +104,7 @@
           With over 25 years of expertise in the beauty industry, 17 of them in
           Brooklyn, New York. I have honed my craft as a professional beautician
           and the proud owner of Blossom Threading Spa and Rose Beauty Studio.
-          Specializing in threading, waxing, facials, lash lifting, haircuts,
+          Specializing in threading, Body waxing, facials, lash lifting, haircuts,
           henna, eyelash extensions, and party makeup, I am dedicated to
           enhancing natural beauty with precision and care. 💖✨
         </p>
@@ -119,55 +116,49 @@
         </a>
       </div>
     </div>
-    <!-- about -->
     <div id="about" class="px-10 dark:bg-slate-900">
-      <div
-        class="container mx-auto flex flex-col-reverse lg:flex-row py-40 gap-16 items-center"
-      >
-        <!-- Left Side (Image) -->
-        <div
-          class="relative w-full max-w-md lg:max-w-lg rounded-lg overflow-hidden"
-        >
-          <img
-            src="./img/work.png"
-            alt="Beautician at work"
-            class="w-full rounded-lg shadow-lg"
-          />
-        </div>
-
-        <!-- Right Side (Text) -->
-        <div class="my-auto flex flex-col gap-6">
-          <h1 class="text-indigo-600 font-bold text-4xl">ABOUT ME</h1>
+      <div class="container mx-auto flex flex-row py-40 gap-16 items-center">
+        <!-- Left: About Section (Compressed Width) -->
+        <div class="lg:w-2/3 flex flex-col gap-6">
+          <h1 class="text-indigo-600 font-bold text-4xl dark:text-prim">
+            ABOUT ME
+          </h1>
           <h1 class="text-3xl font-medium dark:text-white">
             Empowering Beauty with Expertise
           </h1>
 
           <p class="text-gray-400 text-lg leading-relaxed">
             With
-            <span class="font-semibold text-white"
+            <span class="font-semibold text-indigo-400 dark:text-white"
               >over 25 years of experience</span
             >
             in the beauty industry—17 of them in
-            <span class="font-semibold text-indigo-400">Brooklyn, New York</span
-            >—I have dedicated my career to enhancing natural beauty with
+            <span class="font-semibold text-indigo-400"
+              >Brooklyn, New York.</span
+            >
+            I have dedicated my career to enhancing natural beauty with
             precision and care. As the proud owner of
             <span class="font-semibold text-pink-400"
               >Blossom Threading Spa</span
             >
             and
             <span class="font-semibold text-pink-400">Rose Beauty Studio</span>,
-            I specialize in **threading, waxing, facials, lash lifting,
-            haircuts, henna, eyelash extensions, and party makeup**.
+            I specialize in threading, Body waxing, facials, lash lifting, haircuts,
+            henna, eyelash extensions, and party makeup.
           </p>
 
           <!-- Contact Info -->
-          <div class="bg-gray-800 p-5 rounded-lg shadow-lg">
-            <h2 class="text-xl font-semibold text-indigo-500">Get in Touch</h2>
-            <p class="text-gray-300">
+          <div
+            class="bg-white p-5 rounded-lg shadow-lg dark:bg-slate-900 dark:shadow-slate-800"
+          >
+            <h2 class="text-xl font-semibold text-indigo-500 dark:text-white">
+              Get in Touch
+            </h2>
+            <p class="dark:text-white">
               <span class="font-semibold">📍 Address:</span> 2039 78th Street,
               Brooklyn, New York 11214
             </p>
-            <p class="text-gray-300">
+            <p class="dark:text-white">
               <span class="font-semibold">📧 Email:</span>
               <a
                 href="mailto:naziaparveen@gmail.com"
@@ -175,7 +166,7 @@
                 >naziaparveen@gmail.com</a
               >
             </p>
-            <p class="text-gray-300">
+            <p class="dark:text-white">
               <span class="font-semibold">📞 Phone:</span>
               <a href="tel:+19295950931" class="text-indigo-400 hover:underline"
                 >929-595-0931</a
@@ -183,236 +174,351 @@
             </p>
           </div>
         </div>
+        <div class="sm:hidden lg:w-2/3">
+          <iframe
+            class="map-container dark:map-container rounded-lg"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.609801779019!2d-74.00295372344078!3d40.61148104548142!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24566774a5a01%3A0x8c6bba4626a3082!2s2039%2078th%20St%2C%20Brooklyn%2C%20NY%2011214%2C%20USA!5e0!3m2!1sen!2s!4v1708367828175!5m2!1sen!2s"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
       </div>
     </div>
+   
+    <div class="sm:hidden" id="includeYup">      
+      <script>
+        fetch('yup.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('includeYup').innerHTML = data)
+        .catch(error => console.error('Error loading the file:', error));
+      </script>
+    </div>
+      
+    
+    <section id="services" class="dark:bg-slate-900 py-10 p-4 flex flex-col ">
+      <h1 class="text-indigo-600 font-bold text-4xl dark:text-prim text-center lg:hidden">
+        Services
+      </h1>
+      <h2 class="text-2xl dark:text-white mt-2 lg:hidden">
+        Elevate Your Beauty, Perfected With
+        <span class="text-indigo-600 dark:text-prim">Facial Care.</span>
+      </h2>
 
-    <!-- services -->
-    <div id="services" class="dark:bg-slate-900">
-      <div class="container mx-auto">
-        <!-- top -->
-        <div class="flex flex-col gap-3 items-center">
-          <h1 class="text-indigo-600 font-semibold">SERVICES</h1>
-          <h1 class="text-3xl dark:text-white">What do I offer?</h1>
-          <p class="w-1/2 text-center text-gray-400">
-            My approach to website design is to create a website that
-            strengthens your company’s brand while ensuring ease of use and
-            simplicity for your audience.
-          </p>
-        </div>
-        <!-- bottom -->
-        <div class="p-5 sm:p-0 flex flex-wrap">
-          <!-- card -->
-          <div
-            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-          >
-            <img class="w-10" src="./img/icon.png" alt="" />
-            <h1 class="font-medium text-lg dark:text-white">UI / UX Design</h1>
-            <p class="text-gray-400">
-              I specialize in creating interactive websites for individuals and
-              small businesses.
-            </p>
-            <a class="text-indigo-600 font-semibold text-sm" href=""
-              >Read More</a
-            >
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-          >
-            <img class="w-10" src="./img/icon.png" alt="" />
-            <h1 class="font-medium text-lg dark:text-white">UI / UX Design</h1>
-            <p class="text-gray-400">
-              I specialize in creating interactive websites for individuals and
-              small businesses.
-            </p>
-            <a class="text-indigo-600 font-semibold text-sm" href=""
-              >Read More</a
-            >
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-          >
-            <img class="w-10" src="./img/icon.png" alt="" />
-            <h1 class="font-medium text-lg dark:text-white">UI / UX Design</h1>
-            <p class="text-gray-400">
-              I specialize in creating interactive websites for individuals and
-              small businesses.
-            </p>
-            <a class="text-indigo-600 font-semibold text-sm" href=""
-              >Read More</a
-            >
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-          >
-            <img class="w-10" src="./img/icon.png" alt="" />
-            <h1 class="font-medium text-lg dark:text-white">UI / UX Design</h1>
-            <p class="text-gray-400">
-              I specialize in creating interactive websites for individuals and
-              small businesses.
-            </p>
-            <a class="text-indigo-600 font-semibold text-sm" href=""
-              >Read More</a
-            >
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-          >
-            <img class="w-10" src="./img/icon.png" alt="" />
-            <h1 class="font-medium text-lg dark:text-white">UI / UX Design</h1>
-            <p class="text-gray-400">
-              I specialize in creating interactive websites for individuals and
-              small businesses.
-            </p>
-            <a class="text-indigo-600 font-semibold text-sm" href=""
-              >Read More</a
-            >
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-4/12 shadow-xl rounded-lg p-5 my-3 md:my-10 flex flex-col gap-3"
-          >
-            <img class="w-10" src="./img/icon.png" alt="" />
-            <h1 class="font-medium text-lg dark:text-white">UI / UX Design</h1>
-            <p class="text-gray-400">
-              I specialize in creating interactive websites for individuals and
-              small businesses.
-            </p>
-            <a class="text-indigo-600 font-semibold text-sm" href=""
-              >Read More</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
+      <!-- Mobile: Swiper Slider -->
+      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-contain rounded-t-lg"
+                src="./img/s-2.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-red-600 text-xl dark:text-white">
+                  Disposibal Seaweed Special Facial
+                </h2>
+                <p class="font-semibold text-lg dark:text-red">
+                  $160 <span class="line-through text-gray-400">$180</span> |
+                  Two Mask Facial For Glow
+                </p>
+              </div>
+            </div>
+            <!-- Service 1 -->
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/s-1.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">
+                  Disposibal Seaweed Facial
+                </h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $120 <span class="line-through text-gray-400">$150</span> |
+                  One Mask Facial
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-fit rounded-t-lg"
+                src="./img/deep.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-1xl dark:text-white text-red-600">
+                  Deep Cleansing
+                </h2>
+                <p class="dark:text-white text-xl">$80 |Facial Treatment</p>
+              </div>
+            </div>
 
-    <!-- works -->
-    <div id="works" class="py-40 dark:bg-slate-900">
-      <div class="container mx-auto">
-        <!-- top -->
-        <div class="flex flex-col gap-3 items-center">
-          <h1 class="text-indigo-600 font-semibold">PORTFOLIO</h1>
-          <h1 class="text-3xl dark:text-white">Works & Projects</h1>
-          <p class="w-1/2 text-center text-gray-400">
-            My approach to website design is to create a website that
-            strengthens your company’s brand while ensuring ease of use and
-            simplicity for your audience.
-          </p>
-        </div>
-        <!-- bottom -->
-        <div class="p-5 sm:p-0 flex flex-wrap justify-between">
-          <!-- card -->
-          <div
-            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 m-1 md:my-10 flex flex-col gap-3"
-          >
-            <img src="./img/item.png" alt="" />
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 m-1 md:my-10 flex flex-col gap-3"
-          >
-            <img src="./img/item.png" alt="" />
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 m-1 md:my-10 flex flex-col gap-3"
-          >
-            <img src="./img/item.png" alt="" />
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 m-1 md:my-10 flex flex-col gap-3"
-          >
-            <img src="./img/item.png" alt="" />
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 m-1 md:my-10 flex flex-col gap-3"
-          >
-            <img src="./img/item.png" alt="" />
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 m-1 md:my-10 flex flex-col gap-3"
-          >
-            <img src="./img/item.png" alt="" />
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 m-1 md:my-10 flex flex-col gap-3"
-          >
-            <img src="./img/item.png" alt="" />
-          </div>
-          <!-- card -->
-          <div
-            class="w-full md:w-5/12 lg:w-1/5 shadow-xl rounded-lg my-3 m-1 md:my-10 flex flex-col gap-3"
-          >
-            <img src="./img/item.png" alt="" />
+            <!-- Service 2 -->
+            <div class="swiper-slide" >
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/s-3.png"
+                alt="Facial Treatment"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-1xl dark:text-prim text-prim">
+                  Gold Facial
+                </h2>
+                <p class="dark:text-white text-xl">
+                  $90 | Special Cleansing Facial
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/dark-spot.jpg"
+                alt="Facial Treatment"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-1xl text-red-600">
+                  Dark Spot Removal Special
+                </h2>
+                <p class="dark:text-white text-xl">$350 | Remvove Spots</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    <!-- contact -->
-    <div id="contact" class="dark:bg-slate-900">
-      <div class="container mx-auto">
-        <!-- top -->
-        <div class="flex flex-col gap-3 items-center">
-          <h1 class="text-indigo-600 font-semibold">CONTACT</h1>
-          <h1 class="text-3xl dark:text-white">Have a Question?</h1>
-          <p class="w-1/2 text-center text-gray-400">
-            Do you have an idea? Let's discuss it and see what we can do
-            together.
-          </p>
+      <!-- Body waxing section  -->
+      <h2 class="text-2xl sm:text dark:text-white mt-5 text-center lg:hidden">
+        <span class="text-indigo-600 dark:text-prim"
+          >Full-Body Waxing for a Smooth, Flawless Finish</span
+        >
+      </h2>
+      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-fit rounded-t-lg"
+                src="./img/waxing.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-red-600 text-xl dark:text-white">
+                  Full Body  Waxing
+                </h2>
+                <p class="font-semibold text-lg dark:text-red">
+                  $150 <span class="line-through text-gray-400">$160</span> |
+                  Smooth, Silky Skin
+                </p>
+              </div>
+            </div>
+            <!-- Service 1 -->
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/fullarm.webp"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Full Arm</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $40 <span class="line-through text-gray-400">$45</span> |
+                  Body Waxing
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/halarm.jpg"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Half Arm</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $20 <span class="line-through text-gray-400">$25</span> |
+                  Body Waxing
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/underarm.jpg"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">
+                  Under Arms
+                </h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $20 <span class="line-through text-gray-400">$25</span> |
+                  Body Waxing
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/fullleg.jpg"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Full Legs</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $60 <span class="line-through text-gray-400">$70</span> |
+                  Body Waxing
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/halfleg.jpeg"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Half Legs</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $40 <span class="line-through text-gray-400">$45</span> |
+                  Body Waxing
+                </p>
+              </div>
+            </div>    
         </div>
-        <!-- bottom -->
-        <form class="mt-5 p-8 flex flex-col gap-5 items-center">
-          <input
-            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
-            type="text"
-            placeholder="Name Surname"
-          />
-          <input
-            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
-            type="email"
-            placeholder="Email"
-          />
-          <textarea
-            class="p-2 w-full md:w-1/2 ring-1 ring-indigo-300 rounded-sm dark:bg-slate-800 dark:ring-0 dark:text-white"
-            cols="30"
-            rows="10"
-            placeholder="Message..."
-          ></textarea>
-          <button
-            class="w-1/2 bg-indigo-600 text-white font-medium px-3 py-2 rounded-md cursor-pointer"
-          >
-            Submit
-          </button>
-        </form>
       </div>
-    </div>
+      </div>
+      <!-- Facial waxing section  -->
+      <h2 class="text-2xl sm:text dark:text-white mt-5 text-center lg:hidden">
+        <span class="text-indigo-600 dark:text-prim"
+          >Gentle & Precise Face Waxing for a Radiant Glow</span
+        >
+      </h2>
+      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/fullface.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-red-600 text-xl dark:text-white">
+                  Full Face  Waxing
+                </h2>
+                <p class="font-semibold text-lg dark:text-red">
+                  $50 <span class="line-through text-gray-400">$60</span> |
+                  Smooth, Silky Skin
+                </p>
+              </div>
+            </div>
+            <!-- Service 1 -->
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/sides.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Sides</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $20 <span class="line-through text-gray-400">$25</span> |
+                  Face Waxing
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/chin.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Chin</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $10 and Up |
+                  Face Waxing
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/forehead.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Forehead</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $15 |
+                  Face Waxing
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/eyebrow.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Eye Brow</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $15 |
+                  Face Waxing
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/nose.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Nose</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $15 |
+                  Face Waxing
+                </p>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/lip.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Lips</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $10 <span class="line-through text-gray-400">$15</span> |
+                  Face Waxing
+                </p>
+              </div>
+            </div>
+
+              
+        </div>
+      </div>
+      
+    </section>
 
     <!-- footer -->
-    <div class="w-full bg-gray-800">
+    <div class="w-full bg-white dark:bg-slate-900 lg:mb1">
       <div class="container mx-auto p-5 flex items-center justify-between">
         <div class="flex items-center gap-2">
-          <img class="w-8" src="./img/logo.png" alt="" />
-          <span class="text-2xl font-bold text-white">Portwind.</span>
+          <span class="text-1xl font-bold dark:text-prim">Nazia Parveen</span>
         </div>
-        <span class="hidden md:block font-medium text-white"
-          >© 2022 Portwind. Design with ♥️ by Emre Ensar</span
+        <span class="hidden md:block font-medium dark:text-white"
+          >© 2025 GlamByHA. Design with ♥️ by Ahmad Sadaqat</span
         >
-        <div class="flex gap-2">
-          <img class="w-4 cursor-pointer" src="./img/facebook.png" alt="" />
-          <img class="w-4 cursor-pointer" src="./img/instagram.png" alt="" />
-          <img class="w-4 cursor-pointer" src="./img/twitter.png" alt="" />
-          <img class="w-4 cursor-pointer" src="./img/linkedin.png" alt="" />
-        </div>
       </div>
     </div>
     <script src="./app.js"></script>
     <script src="./autotyping.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
