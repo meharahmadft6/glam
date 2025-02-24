@@ -32,7 +32,6 @@
             <img class="img-logo" src="./img/darklogo-re.png" alt="Logo Dark" />
             <span class="text-2xl font-bold text-indigo-900 dark:text-white">
               <a href="index.html"> GlamByHA </a>
-   
             </span>
           </div>
           <ul
@@ -50,11 +49,12 @@
             <li class="hover:text-gray-500">
               <a href="#works">Works</a>
             </li>
-   <li class="hover:text-gray-500">
+            <li class="hover:text-gray-500">
               <a
                 href="https://api.whatsapp.com/send?phone=19295950931&text=Hi!%20I%20want%20to%20book%20an%20appointment"
                 >Contact</a
               >
+            </li>
           </ul>
 
           <div class="flex items-center gap-4">
@@ -91,11 +91,6 @@
           >Hi, I'm Nazia Parveen</span
         >
         <p id="text" class="text-red-500"></p>
-        <div class="lg:hidden ">
-          <a href="appointment.html" class="appointment-btn">
-            Book Appointment
-          </a>
-        </div>
       </div>
 
       <!-- texts -->
@@ -109,9 +104,9 @@
           With over 25 years of expertise in the beauty industry, 17 of them in
           Brooklyn, New York. I have honed my craft as a professional beautician
           and the proud owner of Blossom Threading Spa and Rose Beauty Studio.
-          Specializing in threading, Body waxing, facials, lash lifting, haircuts,
-          henna, eyelash extensions, and party makeup, I am dedicated to
-          enhancing natural beauty with precision and care. 💖✨
+          Specializing in threading, Body waxing, facials, lash lifting,
+          haircuts, henna, eyelash extensions, and party makeup, I am dedicated
+          to enhancing natural beauty with precision and care. 💖✨
         </p>
         <a
           class="bg-indigo-600 text-white text-xl px-3 py-2 rounded-md font-semibold w-fit hover:bg-indigo-900 transition duration-300"
@@ -148,8 +143,8 @@
             >
             and
             <span class="font-semibold text-pink-400">Rose Beauty Studio</span>,
-            I specialize in threading, Body waxing, facials, lash lifting, haircuts,
-            henna, eyelash extensions, and party makeup.
+            I specialize in threading, Body waxing, facials, lash lifting,
+            haircuts, henna, eyelash extensions, and party makeup.
           </p>
 
           <!-- Contact Info -->
@@ -189,19 +184,22 @@
         </div>
       </div>
     </div>
-   
-    <div class="sm:hidden" id="includeYup">      
+
+    <div class="sm:hidden" id="includeYup">
       <script>
-        fetch('yup.html')
-        .then(response => response.text())
-        .then(data => document.getElementById('includeYup').innerHTML = data)
-        .catch(error => console.error('Error loading the file:', error));
+        fetch("yup.html")
+          .then((response) => response.text())
+          .then(
+            (data) => (document.getElementById("includeYup").innerHTML = data)
+          )
+          .catch((error) => console.error("Error loading the file:", error));
       </script>
     </div>
-      
-    
-    <section id="services" class="dark:bg-slate-900 py-10 p-4 flex flex-col ">
-      <h1 class="text-indigo-600 font-bold text-4xl dark:text-prim text-center lg:hidden">
+
+    <section id="services" class="dark:bg-slate-900 py-10 p-4 flex flex-col">
+      <h1
+        class="text-indigo-600 font-bold text-4xl dark:text-prim text-center lg:hidden"
+      >
         Services
       </h1>
       <h2 class="text-2xl dark:text-white mt-2 lg:hidden">
@@ -210,7 +208,9 @@
       </h2>
 
       <!-- Mobile: Swiper Slider -->
-      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden">
+      <div
+        class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden"
+      >
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -227,6 +227,9 @@
                   $160 <span class="line-through text-gray-400">$180</span> |
                   Two Mask Facial For Glow
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <!-- Service 1 -->
@@ -244,6 +247,9 @@
                   $120 <span class="line-through text-gray-400">$150</span> |
                   One Mask Facial
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -257,11 +263,14 @@
                   Deep Cleansing
                 </h2>
                 <p class="dark:text-white text-xl">$80 |Facial Treatment</p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
 
             <!-- Service 2 -->
-            <div class="swiper-slide" >
+            <div class="swiper-slide">
               <img
                 class="w-full h-56 object-cover rounded-t-lg"
                 src="./img/s-3.png"
@@ -274,6 +283,9 @@
                 <p class="dark:text-white text-xl">
                   $90 | Special Cleansing Facial
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -287,6 +299,9 @@
                   Dark Spot Removal Special
                 </h2>
                 <p class="dark:text-white text-xl">$350 | Remvove Spots</p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
           </div>
@@ -298,7 +313,9 @@
           >Full-Body Waxing for a Smooth, Flawless Finish</span
         >
       </h2>
-      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden">
+      <div
+        class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden"
+      >
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -309,12 +326,15 @@
               />
               <div class="p-4">
                 <h2 class="font-semibold text-red-600 text-xl dark:text-white">
-                  Full Body  Waxing
+                  Full Body Waxing
                 </h2>
                 <p class="font-semibold text-lg dark:text-red">
                   $150 <span class="line-through text-gray-400">$160</span> |
                   Smooth, Silky Skin
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <!-- Service 1 -->
@@ -327,9 +347,12 @@
               <div class="p-4">
                 <h2 class="font-semibold text-xl dark:text-white">Full Arm</h2>
                 <p class="text-red-600 font-semibold text-lg">
-                  $40 <span class="line-through text-gray-400">$45</span> |
-                  Body Waxing
+                  $40 <span class="line-through text-gray-400">$45</span> | Body
+                  Waxing
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
 
@@ -342,9 +365,12 @@
               <div class="p-4">
                 <h2 class="font-semibold text-xl dark:text-white">Half Arm</h2>
                 <p class="text-red-600 font-semibold text-lg">
-                  $20 <span class="line-through text-gray-400">$25</span> |
-                  Body Waxing
+                  $20 <span class="line-through text-gray-400">$25</span> | Body
+                  Waxing
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -358,9 +384,12 @@
                   Under Arms
                 </h2>
                 <p class="text-red-600 font-semibold text-lg">
-                  $20 <span class="line-through text-gray-400">$25</span> |
-                  Body Waxing
+                  $20 <span class="line-through text-gray-400">$25</span> | Body
+                  Waxing
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -372,9 +401,12 @@
               <div class="p-4">
                 <h2 class="font-semibold text-xl dark:text-white">Full Legs</h2>
                 <p class="text-red-600 font-semibold text-lg">
-                  $60 <span class="line-through text-gray-400">$70</span> |
-                  Body Waxing
+                  $60 <span class="line-through text-gray-400">$70</span> | Body
+                  Waxing
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -386,13 +418,16 @@
               <div class="p-4">
                 <h2 class="font-semibold text-xl dark:text-white">Half Legs</h2>
                 <p class="text-red-600 font-semibold text-lg">
-                  $40 <span class="line-through text-gray-400">$45</span> |
-                  Body Waxing
+                  $40 <span class="line-through text-gray-400">$45</span> | Body
+                  Waxing
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
-            </div>    
+            </div>
+          </div>
         </div>
-      </div>
       </div>
       <!-- Facial waxing section  -->
       <h2 class="text-2xl sm:text dark:text-white mt-5 text-center lg:hidden">
@@ -400,7 +435,9 @@
           >Gentle & Precise Face Waxing for a Radiant Glow</span
         >
       </h2>
-      <div class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden">
+      <div
+        class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden"
+      >
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
@@ -411,12 +448,15 @@
               />
               <div class="p-4">
                 <h2 class="font-semibold text-red-600 text-xl dark:text-white">
-                  Full Face  Waxing
+                  Full Face Waxing
                 </h2>
                 <p class="font-semibold text-lg dark:text-red">
                   $50 <span class="line-through text-gray-400">$60</span> |
                   Smooth, Silky Skin
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <!-- Service 1 -->
@@ -429,9 +469,12 @@
               <div class="p-4">
                 <h2 class="font-semibold text-xl dark:text-white">Sides</h2>
                 <p class="text-red-600 font-semibold text-lg">
-                  $20 <span class="line-through text-gray-400">$25</span> |
-                  Face Waxing
+                  $20 <span class="line-through text-gray-400">$25</span> | Face
+                  Waxing
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -443,9 +486,11 @@
               <div class="p-4">
                 <h2 class="font-semibold text-xl dark:text-white">Chin</h2>
                 <p class="text-red-600 font-semibold text-lg">
-                  $10 and Up |
-                  Face Waxing
+                  $10 and Up | Face Waxing
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -457,9 +502,11 @@
               <div class="p-4">
                 <h2 class="font-semibold text-xl dark:text-white">Forehead</h2>
                 <p class="text-red-600 font-semibold text-lg">
-                  $15 |
-                  Face Waxing
+                  $15 | Face Waxing
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -471,8 +518,7 @@
               <div class="p-4">
                 <h2 class="font-semibold text-xl dark:text-white">Eye Brow</h2>
                 <p class="text-red-600 font-semibold text-lg">
-                  $15 |
-                  Face Waxing
+                  $15 | Face Waxing
                 </p>
               </div>
             </div>
@@ -485,9 +531,11 @@
               <div class="p-4">
                 <h2 class="font-semibold text-xl dark:text-white">Nose</h2>
                 <p class="text-red-600 font-semibold text-lg">
-                  $15 |
-                  Face Waxing
+                  $15 | Face Waxing
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
             <div class="swiper-slide">
@@ -499,16 +547,132 @@
               <div class="p-4">
                 <h2 class="font-semibold text-xl dark:text-white">Lips</h2>
                 <p class="text-red-600 font-semibold text-lg">
-                  $10 <span class="line-through text-gray-400">$15</span> |
-                  Face Waxing
+                  $10 <span class="line-through text-gray-400">$15</span> | Face
+                  Waxing
                 </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
               </div>
             </div>
-
-              
+          </div>
         </div>
       </div>
-      
+
+      <h2 class="text-2xl sm:text dark:text-white mt-5 text-center lg:hidden">
+        <span class="text-indigo-600 dark:text-prim"
+          >Expert threading services ensure elegantly defined beauty.
+        </span>
+      </h2>
+      <div
+        class="mt-10 max-w-sm dark:bg-slate-800 rounded-lg shadow-lg lg:hidden"
+      >
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-fit rounded-t-lg"
+                src="./img/facethread.jpg"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-red-600 text-xl dark:text-white">
+                  Full Face Threading
+                </h2>
+                <p class="font-semibold text-lg dark:text-red">
+                  $50 <span class="line-through text-gray-400">$60</span> |
+                  Smooth, Silky Skin
+                </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
+              </div>
+            </div>
+            <!-- Service 1 -->
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/cheks.jpg"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Sides</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $20 <span class="line-through text-gray-400">$25</span> | Face
+                  Threading
+                </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/chinthread.jpeg"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Chin</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $10 and Up | Face Threading
+                </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/foreheadthread.jpeg"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Forehead</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $10 | Face Threading
+                </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/eyethread.jpg"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Eye Brow</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $10 | Face Threading
+                </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-cover rounded-t-lg"
+                src="./img/lipthread.webp"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">Lip</h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $10 | Face Threading
+                </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- footer -->
