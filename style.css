@@ -1044,6 +1044,31 @@ main {
     0 4px 6px -4px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+  transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+}
+
+.shadow-lg:hover {
+  transform: scale(1.08) rotateX(10deg) rotateY(5deg);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 105, 180, 0.8);
+  cursor: pointer;
+}
+
+.shadow-lg:hover::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: radial-gradient(
+    circle,
+    rgba(255, 255, 255, 0.2) 10%,
+    transparent 50%
+  );
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.shadow-lg:hover::after {
+  opacity: 1;
 }
 
 .shadow-xl {
@@ -1395,7 +1420,9 @@ main {
 }
 .h-56 {
   height: 16rem; /* 224px */
+  /* transition: transform 0.3s ease-in-out; */
 }
+
 .p-4 {
   padding: 1rem; /* 16px */
 }
@@ -1460,6 +1487,7 @@ main {
   display: grid;
   grid-template-columns: 1fr; /* 1 column by default */
   gap: 1.5rem; /* Adjust spacing between items */
+  transition: transform 0.3s ease-in-out;
 }
 
 /* Large Screens: 3 Column Layout */
@@ -1583,4 +1611,7 @@ main {
 
 .dark .appointment-btn:hover {
   background-color: #c5001f;
+}
+#moon {
+  transition: opacity 0.3s ease, transform 0.3s ease;
 }
