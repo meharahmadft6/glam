@@ -1048,9 +1048,9 @@ main {
 }
 
 .shadow-lg:hover {
-  transform: scale(1.08) rotateX(10deg) rotateY(5deg);
-  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(255, 105, 180, 0.8);
-  cursor: pointer;
+  transform: scale(1.03);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4), 0 0 20px rgba(233, 8, 8, 0.8);
+  /* cursor: pointer; */
 }
 
 .shadow-lg:hover::after {
@@ -1614,4 +1614,122 @@ main {
 }
 #moon {
   transition: opacity 0.3s ease, transform 0.3s ease;
+}
+/* Gradient Background */
+.experience-section {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.dark .dark\:grad {
+  --tw-bg-opacity: 1;
+  background-color: rgb(15 23 42 / var(--tw-bg-opacity));
+}
+/* Headings */
+.experience-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+}
+
+/* Paragraph */
+.experience-text {
+  font-size: 1.125rem;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+/* Grid Layout */
+.experience-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+@media (min-width: 768px) {
+  .experience-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .experience-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Experience Box Styling */
+.experience-box {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 1.25rem; /* 20px */
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.experience-box:hover {
+  transform: scale(1.05);
+}
+
+/* Numbers in Boxes */
+.experience-box h3 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #db2777; /* Tailwind Pink-600 */
+}
+
+/* Text in Boxes */
+.experience-box p {
+  font-size: 1.125rem;
+  color: #4a5568; /* Tailwind Gray-700 */
+}
+/* Fade-in Slide Up Animation */
+@keyframes fadeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Scale Up Animation for Boxes */
+@keyframes scaleUp {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* Apply Animations */
+.experience-section {
+  opacity: 0; /* Initially hidden */
+  animation: fadeSlideUp 1s ease-in-out forwards;
+}
+
+.experience-box {
+  opacity: 0;
+  animation: scaleUp 0.8s ease-in-out forwards;
+}
+
+.experience-box:nth-child(1) {
+  animation-delay: 0.3s;
+}
+.experience-box:nth-child(2) {
+  animation-delay: 0.5s;
+}
+.experience-box:nth-child(3) {
+  animation-delay: 0.7s;
+}
+.experience-box:nth-child(4) {
+  animation-delay: 0.9s;
 }
