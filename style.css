@@ -719,6 +719,9 @@ main {
 .w-10 {
   width: 3.5rem;
 }
+.w-11 {
+  width: 12rem;
+}
 .w-8 {
   width: 2rem;
 }
@@ -805,6 +808,12 @@ main {
 }
 .ms-3 {
   margin-left: 1.75rem;
+}
+.ms-2 {
+  margin-left: 1rem;
+}
+.ms-4 {
+  margin-left: 59.75rem;
 }
 .mb-1 {
   margin-bottom: 1.75rem;
@@ -1426,6 +1435,10 @@ main {
 }
 .h-56 {
   height: 16rem; /* 224px */
+  /* transition: transform 0.3s ease-in-out; */
+}
+.h-57 {
+  height: 20rem; /* 224px */
   /* transition: transform 0.3s ease-in-out; */
 }
 

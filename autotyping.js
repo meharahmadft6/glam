@@ -121,14 +121,21 @@ var AutoTyping = (function (e) {
 const exampleText = [
   "Expert Beautician",
   "Skincare Specialist",
-  "Bridal Makeup ",
+  "Salon Owner & Home-to-Home Service Provider",
+  "Home-to-Home Beauty Services Expert",
+  "Professional Haircut & Styling",
+  "Eyelash Extension & Lifting Specialist",
+  "Threading & Brow Shaping Expert",
+  "Full Body Waxing & Hair Removal",
+  "Luxury Facial Treatments",
+  "Home-to-Home Skincare & Makeup Services",
+  "Bridal Makeup Artist",
   "Beauty Consultant",
-  "Lash Expert",
-  "Henna Tatto",
-  "Waxing Professional",
-  "Facial Professional",
+  "Lash Lift & Tint Expert",
+  "Henna Tattoo Artist",
+  "Waxing Specialist",
+  "Facial & Skincare Professional",
   "Beauty Therapist",
-  "Salon Owner",
 ];
 
 const exampleTyping = new AutoTyping("#text", exampleText, {

@@ -1,28 +1,124 @@
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="shortcut icon"
-      href="./img/darklogo-re.png"
-      type="image/x-icon"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-<!-- AOS Library -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
-    
-    <title>Glam By HA</title>
-  </head>
+  <html lang="en">
+    <head>
+      <!-- Basic Meta Tags -->
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+      <!-- Page Title (Optimized for SEO) -->
+      <title>GlamByHa | Professional Beauty Services & Home-to-Home Services by Nazia Parveen</title>
+  
+      <!-- Meta Description (Optimized for SEO) -->
+      <meta
+        name="description"
+        content="GlamByHa offers professional beauty services, including home-to-home services, by Nazia Parveen with 25+ years of experience. Specializing in threading, waxing, facials, henna, lash lifting, and more. Book your appointment today!"
+      />
+  
+      <!-- Keywords (Optional but helpful for older search engines) -->
+      <meta
+        name="keywords"
+        content="GlamByHa, beauty services, home-to-home services, threading, waxing, facials, henna, lash lifting, Nazia Parveen, professional beautician, Brooklyn beauty salon"
+      />
+  
+      <!-- Canonical URL (Prevent Duplicate Content Issues) -->
+      <link rel="canonical" href="https://www.glambyha.com" />
+  
+      <!-- Favicon -->
+      <link
+        rel="shortcut icon"
+        href="./img/darklogo-re.png"
+        type="image/x-icon"
+      />
+  
+      <!-- Open Graph Meta Tags (For Social Media Sharing) -->
+      <meta property="og:title" content="GlamByHa | Professional Beauty Services & Home-to-Home Services by Nazia Parveen" />
+      <meta
+        property="og:description"
+        content="GlamByHa offers professional beauty services, including home-to-home services, by Nazia Parveen with 25+ years of experience. Specializing in threading, waxing, facials, henna, lash lifting, and more. Book your appointment today!"
+      />
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content="https://www.glambyha.com" />
+      <meta property="og:image" content="https://www.glambyha.com/img/og-image.png" />
+      <meta property="og:site_name" content="GlamByHa" />
+  
+      <!-- Twitter Card Meta Tags (For Twitter Sharing) -->
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:title" content="GlamByHa | Professional Beauty Services & Home-to-Home Services by Nazia Parveen" />
+      <meta
+        name="twitter:description"
+        content="GlamByHa offers professional beauty services, including home-to-home services, by Nazia Parveen with 25+ years of experience. Specializing in threading, waxing, facials, henna, lash lifting, and more. Book your appointment today!"
+      />
+      <meta name="twitter:image" content="https://www.glambyha.com/img/threading.png" />
+  
+      <!-- Structured Data (Schema Markup for SEO) -->
+      <script type="application/ld+json">
+        {
+          "@context": "https://schema.org",
+          "@type": "BeautySalon",
+          "name": "GlamByHa",
+          "image": "https://www.glambyha.com/img/logo.png",
+          "description": "Professional beauty services, including home-to-home services, by Nazia Parveen with 25+ years of experience. Specializing in threading, waxing, facials, henna, lash lifting, and more.",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Your Street Address",
+            "addressLocality": "Brooklyn",
+            "addressRegion": "NY",
+            "postalCode": "11214",
+            "addressCountry": "USA"
+          },
+          "telephone": "+1-929-595-0931",
+          "openingHours": "Mo-Fr 17:00-22:00, Sa 10:00-18:00",
+          "url": "https://www.glambyha.com",
+          "priceRange": "$$",
+          "service": [
+            {
+              "@type": "Service",
+              "name": "Home-to-Home Beauty Services",
+              "description": "Professional beauty services delivered at your home, including threading, waxing, facials, henna, and lash lifting."
+            },
+            {
+              "@type": "Service",
+              "name": "In-Salon Beauty Services",
+              "description": "Professional beauty services offered at our salon, including threading, waxing, facials, henna, and lash lifting."
+            }
+          ]
+        }
+      </script>
+  
+      <!-- Fonts -->
+      <link
+        href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet"
+      />
+  
+      <!-- Swiper CSS -->
+      <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+  
+      <!-- AOS Library -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+      />
+  
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="style.css" />
+  
+      <!-- Preload Critical Resources -->
+      <link rel="preload" href="./img/darklogo-re.png" as="image" />
+      <link rel="preload" href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" as="style" />
+      <link rel="preload" href="style.css" as="style" />
+  
+      <!-- Preconnect to External Domains -->
+      <link rel="preconnect" href="https://fonts.googleapis.com" />
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+      <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+      <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    </head>
+
   <body class="font-nunito">
                    <!-- into section -->
     <div
@@ -50,7 +146,7 @@
               <a href="#services">Services</a>
             </li>
             <li class="hover:text-gray-500">
-              <a href="#works">Works</a>
+              <a href="blog.html">Blog</a>
             </li>
             <li class="hover:text-gray-500">
               <a
@@ -68,6 +164,16 @@
               class="w-8 cursor-pointer"
               alt="Dark Mode Toggle"
             />
+           <a href="blog.html">
+             
+             <img
+             id="moon"
+             src="./img/blogger.png"
+             
+             class="w-8  ms-2 cursor-pointer"
+             alt="Dark Mode Toggle"
+             />
+            </a>
 
             <a
               href="https://api.whatsapp.com/send?phone=19295950931"
@@ -93,7 +199,7 @@
         <span class="text-indigo-900 dark:text-white"
           >Hi, I'm Nazia Parveen</span
         >
-        <p id="text" class="text-red-500"></p>
+        <p id="text" class="text-red-500 w-11"></p>
       </div>
 
       <!-- texts -->
@@ -119,18 +225,7 @@
         </a>
       </div>
     </div>
-   <div class="lg:hidden">
-    <div id="toast1" class="toast1">Go to Services!</div>
-   </div>
-          <!-- Alert Box -->
-        <div class="sm:hidden">
-
-          <div id="alertBox" class="alert">
-            <p>Looking for our services? Scroll down to explore them!</p>
-            <button id="goToServices">Go to Services</button>
-            <span id="closeAlert">&times;</span>
-          </div>
-        </div>
+   
           
     <div id="about" class="px-4 dark:bg-slate-900">
       <div class="container mx-auto flex flex-row py-40 gap-16 items-center">
@@ -177,9 +272,17 @@
             <p class="dark:text-white">
               <span class="font-semibold">📧 Email:</span>
               <a
-                href="mailto:naziaparveen@gmail.com"
+                href="mailto:parveennazia@yahoo.com"
                 class="text-indigo-400 hover:underline"
-                >naziaparveen@gmail.com</a
+                >parveennazia@yahoo.com</a
+              >
+            </p>
+            <p class="dark:text-white">
+              <span class="font-semibold">📧 Email:</span>
+              <a
+                href="mailto:glammbyha@gmail.com"
+                class="text-indigo-400 hover:underline"
+                >glammbyha@gmail.com</a
               >
             </p>
             <p class="dark:text-white">
@@ -205,12 +308,11 @@
 
 <section class="experience-section grad py-40 dark:grad dark:text-white">
   <div class="max-width">
-    <h2 class="experience-title text-4xl" data-aos="fade-up">
+    <h2 class="experience-title text-4xl" >
      25 Years of Beauty Expertise     </h2>
-    <p class="px-4 experience-text" data-aos="fade-up" data-aos-delay="200">
+    <p class="px-4 experience-text">
       Transforming beauty for over two decades, perfecting the art of Facails,Waxing, henna Tatoo, makeup, and more!
     </p>
-
     <!-- Experience Grid -->
     <div class="experience-grid">
       <div class="experience-box " data-aos="zoom-in" data-aos-delay="200">
@@ -227,7 +329,7 @@
       </div>
       <div class="experience-box" data-aos="zoom-in" data-aos-delay="800">
         <h3>Expertise</h3>
-        <p>Henna | Makeup | Skincare | Lash Lifting</p>
+        <p>Henna | Makeup | Skincare | Lash Lifting | Facials</p>
       </div>
     </div>
   </div>
@@ -994,67 +1096,6 @@
       
         observer.observe(section);
       });
-
-      document.addEventListener("DOMContentLoaded", function () {
-        const alertBox = document.getElementById("alertBox");
-        const goToServices = document.getElementById("goToServices");
-        const closeAlert = document.getElementById("closeAlert");
-      
-        if (!alertBox || !goToServices || !closeAlert) {
-          console.error("One or more elements are missing!");
-          return;
-        }
-      
-        console.log("Page Loaded - Toast Alert Will Appear in 5 Seconds");
-      
-        // Show the toast notification after 5 seconds
-        setTimeout(() => {
-          alertBox.classList.add("show");
-          console.log("Toast Alert Shown");
-        }, 5000);
-      
-        // Scroll to Services section when button is clicked
-        goToServices.addEventListener("click", function () {
-          const servicesSection = document.getElementById("servicesSection");
-          if (servicesSection) {
-            servicesSection.scrollIntoView({ behavior: "smooth" });
-            console.log("Scrolling to Services Section...");
-          } else {
-            console.error("Services section not found!");
-          }
-          alertBox.classList.remove("show");
-        });
-      
-        // Close alert manually
-        closeAlert.addEventListener("click", function () {
-          alertBox.classList.remove("show");
-          console.log("Toast Alert Closed");
-        });
-      });
-
-      document.addEventListener("DOMContentLoaded", () => {
-        const toast = document.getElementById("toast1");
-
-        // Show toast after 5 seconds
-        setTimeout(() => {
-            toast.classList.add("show");
-        }, 5000);
-
-        // Scroll to services section on click
-        toast.addEventListener("click", () => {
-            document.getElementById("servicesSection").scrollIntoView({ behavior: "smooth" });
-            hideToast();
-        });
-
-        // Auto-hide toast after 8 seconds
-        setTimeout(hideToast, 8000);
-
-        function hideToast() {
-            toast.classList.remove("show");
-            setTimeout(() => toast.style.display = "none", 15000);
-        }
-    });
-    </script>
-    
+    </script>    
   </body>
 </html>
