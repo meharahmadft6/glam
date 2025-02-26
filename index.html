@@ -24,7 +24,7 @@
     <title>Glam By HA</title>
   </head>
   <body class="font-nunito">
-    <!-- into section -->
+                   <!-- into section -->
     <div
       class="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden"
     >
@@ -119,7 +119,20 @@
         </a>
       </div>
     </div>
-    <div id="about" class="px-10 dark:bg-slate-900">
+   <div class="lg:hidden">
+    <div id="toast1" class="toast1">Go to Services!</div>
+   </div>
+          <!-- Alert Box -->
+        <div class="sm:hidden">
+
+          <div id="alertBox" class="alert">
+            <p>Looking for our services? Scroll down to explore them!</p>
+            <button id="goToServices">Go to Services</button>
+            <span id="closeAlert">&times;</span>
+          </div>
+        </div>
+          
+    <div id="about" class="px-4 dark:bg-slate-900">
       <div class="container mx-auto flex flex-row py-40 gap-16 items-center">
         <!-- Left: About Section (Compressed Width) -->
         <div class="lg:w-2/3 flex flex-col gap-6">
@@ -192,16 +205,15 @@
 
 <section class="experience-section grad py-40 dark:grad dark:text-white">
   <div class="max-width">
-    <h2 class="experience-title" data-aos="fade-up">
-      🌟 25 Years of Beauty Expertise 🌟
-    </h2>
-    <p class="experience-text" data-aos="fade-up" data-aos-delay="200">
-      Transforming beauty for over two decades, perfecting the art of skincare, henna, makeup, and more!
+    <h2 class="experience-title text-4xl" data-aos="fade-up">
+     25 Years of Beauty Expertise     </h2>
+    <p class="px-4 experience-text" data-aos="fade-up" data-aos-delay="200">
+      Transforming beauty for over two decades, perfecting the art of Facails,Waxing, henna Tatoo, makeup, and more!
     </p>
 
     <!-- Experience Grid -->
     <div class="experience-grid">
-      <div class="experience-box" data-aos="zoom-in" data-aos-delay="200">
+      <div class="experience-box " data-aos="zoom-in" data-aos-delay="200">
         <h3>25+</h3>
         <p>Years of Experience</p>
       </div>
@@ -232,7 +244,7 @@
       </script>
     </div>
 
-    <section id="services" class="dark:bg-slate-900 py-10 p-4 flex flex-col">
+    <section id="servicesSection" class="dark:bg-slate-900 py-10 p-4 flex flex-col">
       <h1
         class="text-indigo-600 font-bold text-4xl dark:text-prim text-center lg:hidden"
       >
@@ -421,6 +433,25 @@
                 </h2>
                 <p class="text-red-600 font-semibold text-lg">
                   $20 <span class="line-through text-gray-400">$25</span> | Body
+                  Waxing
+                </p>
+                <a href="appointment.html" class="appointment-btn">
+                  Book Appointment
+                </a>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <img
+                class="w-full h-56 object-fit rounded-t-lg"
+                src="./img/braz.png"
+                alt="deep cleansing"
+              />
+              <div class="p-4">
+                <h2 class="font-semibold text-xl dark:text-white">
+                  Brazilian Waxing
+                </h2>
+                <p class="text-red-600 font-semibold text-lg">
+                  $70 <span class="line-through text-gray-400">$75</span> | Body
                   Waxing
                 </p>
                 <a href="appointment.html" class="appointment-btn">
@@ -963,7 +994,66 @@
       
         observer.observe(section);
       });
+
+      document.addEventListener("DOMContentLoaded", function () {
+        const alertBox = document.getElementById("alertBox");
+        const goToServices = document.getElementById("goToServices");
+        const closeAlert = document.getElementById("closeAlert");
       
+        if (!alertBox || !goToServices || !closeAlert) {
+          console.error("One or more elements are missing!");
+          return;
+        }
+      
+        console.log("Page Loaded - Toast Alert Will Appear in 5 Seconds");
+      
+        // Show the toast notification after 5 seconds
+        setTimeout(() => {
+          alertBox.classList.add("show");
+          console.log("Toast Alert Shown");
+        }, 5000);
+      
+        // Scroll to Services section when button is clicked
+        goToServices.addEventListener("click", function () {
+          const servicesSection = document.getElementById("servicesSection");
+          if (servicesSection) {
+            servicesSection.scrollIntoView({ behavior: "smooth" });
+            console.log("Scrolling to Services Section...");
+          } else {
+            console.error("Services section not found!");
+          }
+          alertBox.classList.remove("show");
+        });
+      
+        // Close alert manually
+        closeAlert.addEventListener("click", function () {
+          alertBox.classList.remove("show");
+          console.log("Toast Alert Closed");
+        });
+      });
+
+      document.addEventListener("DOMContentLoaded", () => {
+        const toast = document.getElementById("toast1");
+
+        // Show toast after 5 seconds
+        setTimeout(() => {
+            toast.classList.add("show");
+        }, 5000);
+
+        // Scroll to services section on click
+        toast.addEventListener("click", () => {
+            document.getElementById("servicesSection").scrollIntoView({ behavior: "smooth" });
+            hideToast();
+        });
+
+        // Auto-hide toast after 8 seconds
+        setTimeout(hideToast, 8000);
+
+        function hideToast() {
+            toast.classList.remove("show");
+            setTimeout(() => toast.style.display = "none", 15000);
+        }
+    });
     </script>
     
   </body>
